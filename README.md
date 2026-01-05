@@ -1,31 +1,32 @@
 # 👁️ VisionPal: AI Assistant for the Visually Impaired
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Model](https://img.shields.io/badge/YOLOv8-Object%20Detection-orange)
+![Model](https://img.shields.io/badge/Model-Llama%203.2%20Vision-orange)
 ![Framework](https://img.shields.io/badge/App-Streamlit-red)
 ![Accessibility](https://img.shields.io/badge/Focus-Assistive%20Tech-green)
 
 ## 📌 Project Overview
-**VisionPal** is an AI-powered assistive application designed to empower visually impaired individuals by providing real-time auditory descriptions of their surroundings. 
+**VisionPal** is an AI-powered assistive application designed to empower visually impaired individuals by providing auditory descriptions of their surroundings. 
 
-By integrating state-of-the-art **Object Detection (YOLOv8)** with **Text-to-Speech (Google TTS)** technologies, the system identifies objects in the user's field of view and announces them aloud, enhancing spatial awareness and independence.
+The application uses a powerful vision-language model, **`meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo`** via **Together AI**, to analyze images from the user's camera. It provides rich, contextual descriptions of the scene, identifies objects, and can answer follow-up questions to help with navigation and environmental awareness.
+
+This core AI capability, paired with **Text-to-Speech (Google TTS)**, offers a comprehensive and interactive way for users to understand their environment.
 
 ## ⚙️ Key Features
-* **Real-time Object Detection:** Uses **YOLOv8** to identify multiple objects (e.g., person, chair, car) with high accuracy and speed.
-* **Auditory Feedback:** Converts detected labels into speech using **gTTS**, acting as a "digital eye" for the user.
+* **AI-Powered Scene Understanding:** Leverages the Llama vision model to generate rich descriptions of scenes and answer user questions about the image.
+* **Auditory Feedback:** Converts AI-generated descriptions and answers into speech using **gTTS**.
 * **Multiple Modes:**
     * **Voice-Activated Mode:** Totally hands-free operation.
     * **Button-Based Mode:** For tactile control when preferred.
 * **Web Interface:** Accessible via browser using **Streamlit** for easy deployment and testing.
 * **Multi-language Support:** Offers language selection (Arabic/English).
 * **Flexible Input:** Supports both live camera feed and gallery image uploads.
-* **AI-Powered Image Description:** Provides intelligent descriptions for scenes.
 * **Voice Interaction:** Includes speech-to-text and text-to-speech capabilities.
 * **Noise Reduction:** Features noise-reduced audio input for clearer commands.
 
 ## 🛠️ Tech Stack
 * **Core Logic:** Python.
-* **Computer Vision:** Ultralytics YOLOv8, OpenCV.
+* **Computer Vision & AI:** `meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo` via Together AI, OpenCV.
 * **Audio Processing:** Google Text-to-Speech (gTTS), PyAudio.
 * **Frontend:** Streamlit.
 
